@@ -28,6 +28,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe', 'Arial', sans-serif;
 }
 
 header {
@@ -40,7 +41,7 @@ nav {
   /* margin-left: 1em; */
   /* margin-top: 1em; */
   left: 2em;
-  bottom: 0em;
+  bottom: 0.3em;
 }
   nav img {
     display: inline-block;
@@ -74,7 +75,7 @@ nav {
 .bg-sunflower   { background: #FFC34C; background: rgba(255, 195, 76, 1); }
 .bg-blue-dark   { background: #145E80; background: rgba(20, 94, 128, 1); }
 .bg-white       { background: #FFFFFF; background: rgba(255, 255, 255, 1); }
-.bg-grey        { background: #CCCCCC; background: rgba(204, 204, 204, 1); }
+.bg-grey        { background: #666666; background: rgba(102, 102, 102, 1); }
 .bg-eggshell    { background: #F1F1F1; background: rgba(241, 241, 241, 1); }
 .bg-black       { background: #000000; background: rgba(0, 0, 0, 1); }
 .bg-spruce      { background: #20674e; background: rgba(32, 103, 78, 1); }
@@ -84,19 +85,12 @@ nav {
 .txt-black      { color: #000000; color: rgba(0, 0, 0, 1); }
 .txt-blue-light { color: #34C3FF; color: rgba(52, 195, 255, 1); }
 .txt-blue-dark  { color: #145E80; color: rgba(20, 94, 128, 1); }
-.txt-grey       { color: #CCCCCC; color: rgba(153, 153, 153, 1); }
-.txt-grey-dark  { color: #999999; color: rgba(153, 153, 153, 1); }
+.txt-grey       { color: #666666; color: rgba(102, 102, 102, 1); }
 .txt-sunflower  { color: #FFC34C; color: rgba(255, 195, 76, 1); }
 .txt-teal       { color: #31C7D8; color: rgba(49, 199, 216, 1); }
 .txt-white      { color: #FFFFFF; color: rgba(255, 255, 255, 1); }
 
-.no-decor {
-  text-decoration: none;
-}
-
-  .no-decor:hover {
-    text-decoration: underline;
-  }
+.no-decor { text-decoration: none; }
 
 .icon-facebook:before           { content: '\e600'; }
 .icon-link:before               { content: '\e601'; }
@@ -152,28 +146,30 @@ nav {
 
 .header-logo {
   float: right;
-  margin-right: 3em;
-  margin-top: 1em;
-  padding-right: 2em;
 }
 
 .header-nav-home {
-  display: inline-block;
+  float: left;
+  line-height: 0.9em;
 }
 
 .header-nav-categories {
-  display: inline-block;
+  float: left;
 }
 
   .header-nav-categories a {
     text-decoration: none;
     display: block;
+    font-size: 0.875em;
     margin: 0 0 0 4em;
     float: left;
+    font-family: sans-serif;
+    font-weight: lighter;
   }
 
     .header-nav-categories a span {
       margin-left: 0.5em;
+      font-size: 0.85em;
     }
 
 .header-nav-sp {
@@ -185,15 +181,21 @@ nav {
   margin: 0;
 }
 
+.header-edge {
+  height: 1.6em;
+}
+
 .header-edge img {
   width: 100%;
   height: 0.8em;
 }
 
 .subheader-title {
-  font-size: 1.5em;
-  line-height: 2em;
-  margin-left: 0.5em;
+  font-size: 1.625em;
+  font-family: sans-serif;
+  line-height: 2.4em;
+  margin-left: 1.2em;
+  font-weight: 300;
 }
 
 
@@ -220,7 +222,7 @@ nav {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: 0.8em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
