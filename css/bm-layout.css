@@ -1,0 +1,112 @@
+@charset "utf-8";
+/****************************************************
+  Baker Mackenzie
+
+0. Design Notes
+1. HTML elements
+2. Foundation Overrides
+3. Structure
+4. Navigation
+5. Modular / Icons
+6. General
+7. Queries
+8. Yo Fonts Mama
+
+****************************************************/
+
+/****************************************************
+  0. Design Notes
+****************************************************/
+
+
+/****************************************************
+  1. HTML Elements
+****************************************************/
+
+header {
+  height: 3.5em;
+}
+
+nav {
+  display: inline-block;
+}
+  nav img {
+    display: inline-block;
+  }
+
+
+/****************************************************
+  2. Foundation Overrides
+****************************************************/
+
+
+
+
+/****************************************************
+  3. Structure
+****************************************************/
+
+.subheader {
+  height: 4em;
+  background: url('../img/header-scallion.png') 0 0 no-repeat;
+}
+
+
+/****************************************************
+  5. Modular
+****************************************************/
+
+.txt-bm-red { color: rgb(99,0,0); }
+.txt-bm-grey { color: rgb(153, 153, 153); }
+
+
+
+/****************************************************
+  6. General
+****************************************************/
+
+.header-logo {
+  float: right;
+  margin-right: 3em;
+  margin-top: 1em;
+  padding-right: 2em;
+  border-right: 1px solid #AAA;
+}
+
+.header-nav-home {
+display: inline-block;
+margin-right: 2em;
+margin-top: 1em;
+}
+
+.header-nav-categories {
+display: inline-block;
+}
+
+  .header-nav-categories a {
+    text-decoration: none;
+    display: block;
+    margin: 0 2em;
+    float: left;
+  }
+
+.header-nav-sp {
+  float: right;
+}
+
+.header-edge {
+  padding: 0;
+  margin: 0;
+}
+
+.header-edge img {
+  width: 100%;
+  height: 0.8em;
+}
+
+.subheader-title {
+font-size: 1.5em;
+line-height: 2em;
+margin-left: 0.5em;
+}
+
