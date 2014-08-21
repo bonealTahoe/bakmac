@@ -76,6 +76,9 @@ nav {
   4. Modular
 ****************************************************/
 
+.left { float: left !important; }
+.right { float: right !important; }
+
 .bg-bm-red      { background: #A71A30; background: rgba(167, 26, 48, 1); }
 
 .bg-teal        { background: #31C7D8; background: rgba(49, 199, 216, 1); }
@@ -263,8 +266,9 @@ nav {
       font-size: 0.85em;
     }
 
-.header-nav-sp {
-  float: right;
+.header-nav-sb {
+  height: 4em;
+  width: 10em;
 }
 
 .header-edge {
