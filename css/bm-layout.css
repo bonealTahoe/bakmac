@@ -45,14 +45,18 @@ header {
 
 nav {
   position: absolute;
-  /* margin-left: 1em; */
-  /* margin-top: 1em; */
   left: 0.6em;
   bottom: 0.3em;
 }
   nav img {
     display: inline-block;
   }
+
+h2.bm-webpart {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-family: 'Segoe', 'Arial', sans-serif;
+}
 
 
 /****************************************************
@@ -69,7 +73,7 @@ nav {
   3. Navigation
 ****************************************************/
 
-/* blankity blank blank */
+/* blank on porpoise */
 
 
 /****************************************************
@@ -96,15 +100,24 @@ nav {
 .txt-blue-light { color: #34C3FF; color: rgba(52, 195, 255, 1); }
 .txt-blue-dark  { color: #145E80; color: rgba(20, 94, 128, 1); }
 .txt-grey       { color: #666666; color: rgba(102, 102, 102, 1); }
+.txt-grey-light { color: #999999; color: rgba(153, 153, 153, 1); }
 .txt-sunflower  { color: #FFC34C; color: rgba(255, 195, 76, 1); }
 .txt-teal       { color: #31C7D8; color: rgba(49, 199, 216, 1); }
 .txt-white      { color: #FFFFFF; color: rgba(255, 255, 255, 1); }
 
 .no-decor { text-decoration: none; }
 
-.icon-facebook:before           { content: '\e600'; }
-.icon-link:before               { content: '\e601'; }
-.icon-weather:before            { content: '\e602'; }
+@font-face {
+    font-family: "tpglyph";
+    src:url("fonts/tpglyph.eot");
+    src:url("fonts/tpglyph.eot?#iefix") format("embedded-opentype"),
+      url("fonts/tpglyph.ttf") format("truetype"),
+      url("fonts/tpglyph.woff") format("woff"),
+      url("fonts/tpglyph.svg#tpglyph") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .icon-menu2:before              { content: '\e603'; }
 .icon-tools:before              { content: '\e604'; }
 .icon-person:before             { content: '\e605'; }
@@ -216,17 +229,32 @@ nav {
     width: 10em;
     line-height: 1.1em;
     margin-top: 0.8em;
+    color: #888;
   }
 
-.tile-label-arrow {
-  width: 1rem;
-  height: 1.75rem;
-  background: url('../img/bak-arrow.png') 0 0 no-repeat;
-  display: block;
-  position: absolute;
-  right: 1rem;
-  bottom: 0.5rem;
+.tile-label .label-arrow {
+  font-size: 2.5em;
+position: absolute;
+right: 0.5em;
+top: 0.65em;
+color: #999999;
+-webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+        transition: all 0.2s;
 }
+
+  .tile-label:hover > p {
+    color: #333;
+  }
+
+  .tile-label:hover .label-arrow {
+    color: #666;
+    font-size: 2.85em;
+    top: 0.5em;
+    right: 0.3em;
+  }
 
 .alpha-vertical { margin-top: 0; padding-top: 0; }
 .alpha-horizontal { margin-left: 0; padding-left: 0; }
