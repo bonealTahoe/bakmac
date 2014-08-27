@@ -4,12 +4,13 @@
 
   0. Design Notes
   1. HTML elements
-  2. Structure
-  3. Navigation
-  4. Modular / Icons
-  5. General
-  6. Media Queries
-  7. Yo Fonts Mama
+  2. CoreV15 overrides?
+  3. Structure
+  4. Navigation
+  5. Modular / Icons
+  6. General
+  7. Media Queries
+  8. Yo Fonts Mama
 
 ****************************************************/
 
@@ -23,9 +24,13 @@
 /* anything with prefix __proto__ is for prototyping only */
 
 .__proto__-tiles {
-  width: 34.75em; 
+  width: 34.75em; /* 556px on a page with base font size set to 16px */ 
   margin: 2em 0 0 0.875em;
 }
+
+  /*   MAKE SURE TO OVERRIDE COREV15.CSS AND FORCE font-size:16px; ON THE BODY TAG.
+      Please.
+  */
 
 
 /****************************************************
@@ -36,6 +41,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe', 'Arial', sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -59,12 +65,24 @@ h2.bm-webpart {
 }
 
 
+
+/****************************************************
+  2. CoreV15 overrides?
+****************************************************/
+
+#SuiteLinksBox { display: none; }
+
+/* other overrides could be for the bg color of the sharepoint blue bar, 
+and the background color for the lower ribbon area */
+
+
 /****************************************************
   2. Structure
 ****************************************************/
 
 .subheader {
   height: 4em;
+  min-height: 4em;
   background: url('../img/header-scallion.png') 0 0 no-repeat;
 }
 
@@ -120,37 +138,17 @@ h2.bm-webpart {
 
 .icon-menu2:before              { content: '\e603'; }
 .icon-tools:before              { content: '\e604'; }
-.icon-person:before             { content: '\e605'; }
-.icon-project:before            { content: '\e606'; }
 .icon-home:before               { content: '\e607'; }
 .icon-close:before              { content: '\e608'; }
-.icon-arrowdown:before          { content: '\e609'; }
 .icon-search:before             { content: '\e610'; }
-.icon-hamburger:before          { content: '\e611'; }
 .icon-view:before               { content: '\e612'; }
-.icon-pinterest:before          { content: '\e613'; }
-.icon-gplus:before              { content: '\e614'; }
-.icon-twitter:before            { content: '\e615'; }
-.icon-arrowrightfill:before     { content: '\e616'; }
 .icon-arrowrightflat:before     { content: '\e617'; }
-.icon-survey:before             { content: '\e618'; }
-.icon-emailreport:before        { content: '\e619'; }
-.icon-calendar:before           { content: '\e620'; }
-.icon-notes:before              { content: '\e621'; }
-.icon-gallery:before            { content: '\e622'; }
 .icon-arrowleftflat:before      { content: '\e623'; }
 .icon-phone:before              { content: '\e624'; }
 .icon-sites:before              { content: '\e625'; }
 .icon-question:before           { content: '\e626'; }
-.icon-company:before            { content: '\e627'; }
-.icon-clock:before              { content: '\e628'; }
-.icon-searchperson:before       { content: '\e629'; }
-.icon-payroll:before            { content: '\e630'; }
-.icon-travel:before             { content: '\e631'; }
 .icon-arrowrightslider:before   { content: '\e632'; }
 .icon-arrowleftslider:before    { content: '\e633'; }
-.icon-arrowleftpointed:before   { content: '\e634'; }
-.icon-arrowrightpointed:before  { content: '\e635'; }
 .icon-teamsite:before           { content: '\e636'; }
 .icon-projectsite:before        { content: '\e637'; }
 
@@ -321,7 +319,14 @@ color: #999999;
   font-weight: 300;
 }
 
-
+.bm-webpart-colorbar {
+  border-width: 5px 0 0;
+  clear: both;
+  margin: 0;
+  height: 0;
+  width: 100%;
+  border-color: #F0F0F0;
+}
 
 
 /****************************************************
